@@ -1,0 +1,15 @@
+{
+    "name": "abiside/libro-azul",
+    "description": "Librería para consumir los webservices del libro azul mexicano desde un proyecto en Laravel",
+    "type": "library",
+    "require": {
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abimael Espinoza",
+            "email": "abimael@lovlisoft.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
