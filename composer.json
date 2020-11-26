@@ -15,8 +15,8 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        "psr-0": {
-            "Abiside\\LibroAzul": "src/"
+        "psr-4": {
+            "Abiside\\LibroAzul\\": "src/"
         }
     }
 }
