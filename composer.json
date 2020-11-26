@@ -3,6 +3,8 @@
     "description": "Librería para consumir los webservices del libro azul mexicano desde un proyecto en Laravel",
     "type": "library",
     "require": {
+        "php": ">=5.6.0",
+        "ext-soap": "*"
     },
     "license": "MIT",
     "authors": [
@@ -11,5 +13,10 @@
             "email": "abimael@lovlisoft.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Abiside\\LibroAzul": "src/"
+        }
+    }
 }
