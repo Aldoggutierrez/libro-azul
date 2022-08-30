@@ -18,5 +18,15 @@
         "psr-4": {
             "Abiside\\LibroAzul\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abiside\\LibroAzul\\LibroAzulServiceProvider"
+            ],
+            "aliases":{
+                "libroazul": "Abiside\\LibroAzul\\LibroAzulFacade"
+            }
+        }
     }
 }
