@@ -82,7 +82,7 @@ class LibroAzul
      * @param  int  $year
      * @return string
      */
-    public function getMakesByYear(int $year)
+    public function getBrandsByYear(int $year)
     {
         $response = $this->call('ObtenerMarcasPorAnio', [
             'Llave' => $this->sessionToken,
@@ -95,19 +95,19 @@ class LibroAzul
     }
 
     /**
-     * Get the list of models by year and make
+     * Get the list of models by year and brand
      *
      * @param  int  $year
-     * @param  int  $make
+     * @param  int  $brand
      * @return string
      */
-    public function getModelsByYearAndMake(int $year, int $make)
+    public function getModelsByYearAndBrand(int $year, int $brand)
     {
         $response = $this->call('ObtenerModelosPorAnioMarca', [
             'Llave' => $this->sessionToken,
             'Clase' => 0,
             'ClaveAnio' => $year,
-            'ClaveMarca' => $make,
+            'ClaveMarca' => $brand,
             'Edicion' => 0,
         ]);
 
@@ -115,20 +115,20 @@ class LibroAzul
     }
 
     /**
-     * Get the list of versions by model, year and make
+     * Get the list of versions by model, year and brand
      *
      * @param  int  $year
-     * @param  int  $make
+     * @param  int  $brand
      * @param  int  $model
      * @return string
      */
-    public function getVersionsByYearMakeAndModel(int $year, int $make, int $model)
+    public function getVersionsByYearBrandAndModel(int $year, int $brand, int $model)
     {
         $response = $this->call('ObtenerVersionesPorAnioMarcaModelo', [
             'Llave' => $this->sessionToken,
             'Clase' => 0,
             'ClaveAnio' => $year,
-            'ClaveMarca' => $make,
+            'ClaveMarca' => $brand,
             'ClaveModelo' => $model,
             'Edicion' => 0,
         ]);
