@@ -15,7 +15,7 @@ class LibroAzulServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'./config/services.php', 'services'
+            __DIR__.'/config/services.php', 'services'
         );
         $this->app->singleton('libroazul', function() {
             return new LibroAzul();
